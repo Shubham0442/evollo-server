@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const contentSchema = mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
-  contentFileUrl: { type: String, required: false },
+  fileurl: { type: String, required: false },
   userId: { type: String, required: true },
   createdAt: { type: String, required: true }
 });
