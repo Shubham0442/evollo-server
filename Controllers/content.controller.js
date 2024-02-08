@@ -55,7 +55,7 @@ contentController.post(
   }
 );
 
-contentController.get("/", async (req, res) => {
+contentController.get("/", authentication, async (req, res) => {
   const { id } = req.query;
   // console.log("id", id);
   const data = await Content.find({ userId: id });
